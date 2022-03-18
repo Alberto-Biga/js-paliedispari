@@ -6,24 +6,16 @@ let inputUtente = prompt('Inserisci una parola o una frase, ti dirò se palindro
 function palindromo (inputUtente){
     //input utente no spazi
     inputUtente = inputUtente.replace(/\s/g,'');
-    //console.log(inputUtente);
-
-
+    console.log(inputUtente);
     //separazione in singole lettere
     let inputUtenteSplit = inputUtente.split('');
-    //console.log(inputUtenteSplit);
-
-
+    console.log(inputUtenteSplit);
     //inversione lettere
     inputUtenteSplit = inputUtenteSplit.reverse();
-    //console.log(inputUtenteSplit)
-
-
+    console.log(inputUtenteSplit)
     //unione lettere invertite
     let inputUtenteInvertito = inputUtenteSplit.join('')
-    //console.log(inputUtenteInvertito)
-
-
+    console.log(inputUtenteInvertito)
     //risultati funzione
     if (inputUtente == inputUtenteInvertito) {
         return 'palindroma'
@@ -31,8 +23,6 @@ function palindromo (inputUtente){
         return 'non palindroma'
     }
 }
-
-
 //determino cosa far stampare a video
 if ( palindromo(inputUtente) == 'palindroma'){
     document.getElementById("target").innerHTML = 'Sisi, è palindroma!'

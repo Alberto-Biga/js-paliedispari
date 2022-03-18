@@ -26,10 +26,10 @@ function numeoroPariDispari( somma ){
 //stampo a video risultato
 if ( (numeoroPariDispari(somma) == "pari") && (sceltaUtente == "pari") ){
     document.getElementById("target").innerHTML = 'Vince il pari. Hai vinto!'
-}else if ( (numeoroPariDispari(somma) == "dispari") && (sceltaUtente == "dispari") ) {
+}else if ( (numeoroPariDispari(somma) == "dispari") && (sceltaUtente == "dispari") ){
     document.getElementById("target").innerHTML = 'Vince il dispari. Hai vinto'
-}else if ( (numeoroPariDispari(somma) == "pari") && (sceltaUtente == "dispari") ) {
+}else if ( (numeoroPariDispari(somma) == "pari") && (sceltaUtente == "dispari") ){
     document.getElementById("target").innerHTML = 'Vince il pari. Hai perso'
-}else if ( (numeoroPariDispari(somma) == "dispari") && (sceltaUtente == "pari") ) {
+}else if ( (numeoroPariDispari(somma) == "dispari") && (sceltaUtente == "pari") ){
     document.getElementById("target").innerHTML = 'Vince il dispari. Hai perso'
 }
